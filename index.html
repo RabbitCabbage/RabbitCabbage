@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shen Dong - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #000;
+            background-color: #fff; /* 白色背景 */
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        body.dark-mode {
+            background-color: #121212; /* 黑夜模式背景色 */
+            color: #fff; /* 黑夜模式文本颜色 */
+        }
+        header {
+            background-color: #f0f0f0; /* 很浅的灰色 */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* 导航栏内容靠右 */
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        header.dark-mode {
+            background-color: #1f1f1f; /* 黑夜模式导航栏背景色 */
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: inherit; /* 继承文本颜色 */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto; /* 让内容居中 */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        section {
+            padding: 20px 0;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-bottom: 1px solid #e0e0e0; /* 浅灰色边框 */
+            transition: border-color 0.3s;
+        }
+        section.dark-mode {
+            border-bottom-color: #333; /* 黑夜模式边框颜色 */
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            margin-left: 20px; /* 调整图片位置 */
+            width: 150px;
+            height: 150px;
+        }
+        .profile div {
+            max-width: 600px;
+        }
+        .dark-mode-toggle {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode-toggle.dark-mode {
+            background-color: #333;
+            color: #fff;
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="[Your GitHub link]" target="_blank">GitHub</a></li>
+                    <li><a href="[Your CV link]" target="_blank">CV</a></li>
+                </ul>
+                <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <div class="container">
+            <h1>Shen Dong</h1>
+            <div class="profile">
+                <div>
+                    <p>Welcome! I'm Shen Dong, a [Your profession here]. I specialize in [your specialization or interest]. With a passion for [related field or hobby], I strive to [personal mission or goal].</p>
+                </div>
+                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project One:</strong> Description of the first project. Highlight key features and technologies used.</li>
+                <li><strong>Project Two:</strong> Description of the second project. Highlight key features and technologies used.</li>
+                <li><strong>Project Three:</strong> Description of the third project. Highlight key features and technologies used.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="publications" class="container">
+        <div class="container">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>Article One:</strong> Title of the first article. Published in [journal or platform] on [date].</li>
+                <li><strong>Article Two:</strong> Title of the second article. Published in [journal or platform] on [date].</li>
+                <li><strong>Article Three:</strong> Title of the third article. Published in [journal or platform] on [date].</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        const header = document.querySelector('header');
+        const sections = document.querySelectorAll('section');
+        const darkModeClass = 'dark-mode';
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle(darkModeClass);
+            header.classList.toggle(darkModeClass);
+            toggleButton.classList.toggle(darkModeClass);
+            sections.forEach(section => section.classList.toggle(darkModeClass));
+            toggleButton.textContent = body.classList.contains(darkModeClass) ? 'Light Mode' : 'Dark Mode';
+        });
+    </script>
+</body>
+</html>
