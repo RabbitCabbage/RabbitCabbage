@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shen Dong - Personal Website</title>
     <style>
+        @font-face {
+            font-family: source-serif-4;
+            src: url('assets/fonts/SourceSerif4-Regular.ttf') format('truetype');
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: source-serif-4, serif;
             color: #000;
-            background-color: #fff; /* 白色背景 */
+            background-color: #fff;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
             transition: background-color 0.3s, color 0.3s;
         }
         body.dark-mode {
-            background-color: #121212; /* 黑夜模式背景色 */
-            color: #fff; /* 黑夜模式文本颜色 */
+            background-color: #121212;
+            color: #fff;
         }
         header {
-            background-color: #f0f0f0; /* 很浅的灰色 */
+            background-color: #f0f0f0;
             padding: 20px;
             display: flex;
-            justify-content: space-between; /* 导航栏内容靠右 */
+            justify-content: space-between;
             align-items: center;
             transition: background-color 0.3s;
         }
         header.dark-mode {
-            background-color: #1f1f1f; /* 黑夜模式导航栏背景色 */
+            background-color: #1f1f1f;
         }
         nav ul {
             list-style: none;
@@ -39,11 +44,11 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: inherit; /* 继承文本颜色 */
+            color: inherit;
         }
         .container {
             width: 80%;
-            margin: 0 auto; /* 让内容居中 */
+            margin: 0 auto;
         }
         h1 {
             margin: 0;
@@ -53,11 +58,11 @@
             padding: 20px 0;
             margin-bottom: 20px;
             border-radius: 8px;
-            border-bottom: 1px solid #e0e0e0; /* 浅灰色边框 */
+            border-bottom: 1px solid #e0e0e0;
             transition: border-color 0.3s;
         }
         section.dark-mode {
-            border-bottom-color: #333; /* 黑夜模式边框颜色 */
+            border-bottom-color: #333;
         }
         section h2 {
             margin-top: 0;
@@ -68,8 +73,8 @@
             align-items: center;
         }
         .profile img {
-            border-radius: 50%;
-            margin-left: 20px; /* 调整图片位置 */
+            border-radius: 5%;
+            margin-left: 20px;
             width: 150px;
             height: 150px;
         }
@@ -89,6 +94,17 @@
             background-color: #333;
             color: #fff;
             border-color: #fff;
+            padding: auto;
+        }
+        .dark-mode-toggle {
+            font-family: 'source-serif-4', serif;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -101,9 +117,9 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="[Your GitHub link]" target="_blank">GitHub</a></li>
-                    <li><a href="[Your CV link]" target="_blank">CV</a></li>
+                    <!-- <li><a href="[Your CV link]" target="_blank">CV</a></li> -->
+                    <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
                 </ul>
-                <button id="dark-mode-toggle" class="dark-mode-toggle">Dark Mode</button>
             </nav>
         </div>
     </header>
@@ -115,7 +131,7 @@
                 <div>
                     <p>Welcome! I'm Shen Dong, a [Your profession here]. I specialize in [your specialization or interest]. With a passion for [related field or hobby], I strive to [personal mission or goal].</p>
                 </div>
-                <img src="https://via.placeholder.com/150" alt="Profile Picture">
+                <img src="assets/images/DS.jpg" alt="Profile Picture">
             </div>
         </div>
     </section>
