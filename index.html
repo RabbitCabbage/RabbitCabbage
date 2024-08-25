@@ -48,9 +48,15 @@
         color: rgb(154, 185, 203);
     }
 
-    .container {
-        width: 90%;
+    .main-container {
+        width: 100%;
         margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: left;
+    }
+    .mycontainer {
+        width: 100%;
     }
     h1 {
         margin: 0;
@@ -201,8 +207,8 @@
         </div>
       </div>
     </nav>
-    <section id="about" class="container">
-        <div class="container">
+    <div class="main-container">
+    <section id="about" class="mycontainer">
             <h1>Shēn Dǒng <small>(董珅)</small></h1>
             <div class="profile">
                 <div>
@@ -216,30 +222,26 @@
                 </div>
                 <img src="assets/images/DS2024.jpg" alt="Profile Picture">
             </div>
-        </div>
     </section>
 
-    <section id="projects" class="container">
-        <div class="container">
+    <section id="projects" class="mycontainer">
             <h2>Projects</h2>
             <ul>
                 <li><strong>Project One:</strong> Description of the first project. Highlight key features and technologies used.</li>
                 <li><strong>Project Two:</strong> Description of the second project. Highlight key features and technologies used.</li>
                 <li><strong>Project Three:</strong> Description of the third project. Highlight key features and technologies used.</li>
             </ul>
-        </div>
     </section>
 
-    <section id="publications" class="container">
-        <div class="container">
+    <section id="publications" class="mycontainer">
             <h2>Publications</h2>
             <ul>
                 <li><strong>Article One:</strong> Title of the first article. Published in [journal or platform] on [date].</li>
                 <li><strong>Article Two:</strong> Title of the second article. Published in [journal or platform] on [date].</li>
                 <li><strong>Article Three:</strong> Title of the third article. Published in [journal or platform] on [date].</li>
             </ul>
-        </div>
     </section>
+    </div>
 </body>
 
     <script>
