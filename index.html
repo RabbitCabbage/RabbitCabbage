@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shen Dong</title>
+    <title>Shēn Dǒng</title>
     <html lang="en">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script type="text/javascript" async
@@ -24,9 +24,30 @@
         transition: background-color 0.3s, color 0.3s;
     }
     body.dark-mode {
-        background-color: #121212;
-        color: #fff;
+        background-color: #262828;
+        color: #d1d1d1;
     }
+    a.myurls {
+        color: rgb(0, 98, 155);
+    }
+    a.myurls:hover {
+        color: rgb(0, 115, 182);
+    }
+
+    a.myurls:visited {
+        color: rgb(0, 98, 155);
+    }
+
+    a.myurls.dark-mode {
+        color: rgb(154, 185, 203);
+    }
+    a.myurls.dark-mode:hover {
+        color: rgb(134, 167, 185);
+    }
+    a.myurls.dark-mode:visited {
+        color: rgb(154, 185, 203);
+    }
+
     .container {
         width: 90%;
         margin: 0 auto;
@@ -106,6 +127,21 @@
       svg.active .svg-elem-2 {
         stroke-dashoffset: 0;
       }
+
+      svg.svg-elem-1 {
+        stroke: rgb(0, 98, 155);
+      }
+      svg.svg-elem-2 {
+        stroke: rgb(0, 98, 155);
+      }
+
+      svg.svg-elem-1.dark-mode {
+        stroke: rgb(154, 185, 203);
+      }
+      svg.svg-elem-2.dark-mode {
+        stroke: rgb(154, 185, 203);
+      }
+
 </style>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
@@ -131,8 +167,8 @@
                 </sodipodi:namedview>
                 <defs id="defs1"></defs>
                 <g inkscape:label="图层 1" inkscape:groupmode="layer" id="layer1">
-                  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2.003px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" d="m 15.714692,70.724789 c -1.257551,-0.05048 11.157877,-3.276651 24.602007,-31.072432 -3.849733,3.711627 -7.944483,9.599559 -7.57689,19.081956 0.367594,9.482398 -8.345785,15.77938 -14.925782,15.733157 C 11.23403,74.42125 8.3048199,72.854212 4.8615059,68.008887 18.606823,74.661685 47.450457,49.727191 57.688458,41.067405 53.576486,50.249578 43.592396,69.219259 40.188746,75.449127 44.960411,65.249666 50.390047,59.255014 53.555456,60.74026 c 3.165409,1.485245 2.029845,5.249472 0.230273,7.890035 -1.799572,2.640563 -2.364886,5.073738 -0.595807,6.75906 1.76908,1.685322 13.160083,-3.303084 18.343523,-7.795842 5.18344,-4.492758 0.86977,-6.575731 -2.39778,-4.651204 -3.26756,1.924526 -6.19527,9.520308 0.0925,12.232579 6.28781,2.71227 14.267524,-6.796105 18.448583,-13.047249 -2.808504,5.414426 -4.517168,9.517207 -6.661295,13.454422 6.877381,-12.630212 9.029731,-13.372514 11.203044,-13.397001 2.173313,-0.02449 3.506473,2.369672 0.538111,7.430032 -1.372131,2.339161 -1.529288,4.987294 -0.120976,5.671494 1.952499,0.948583 9.662828,-5.881131 9.662828,-5.881131" id="path1" sodipodi:nodetypes="cczzccczzzzzzcczssc" class="svg-elem-1"></path>
-                  <path style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 2.003px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" d="m 133.8798,46.260151 c 0,0 -13.3365,27.087521 -19.30305,28.739111 -3.94547,1.09214 -5.6418,0.0156 -4.78302,-1.94875 1.30736,-2.99047 3.43691,-2.84227 5.39673,-2.53172 1.95982,0.31054 8.70784,5.07532 16.5177,4.83621 7.80985,-0.23911 10.81737,-10.37425 10.59667,-17.934874 -0.2207,-7.560622 -7.52982,-17.53136 -13.205,-15.016285 -3.66697,1.625095 -4.37929,5.597193 -4.44508,8.586427 -0.0658,2.989234 3.64445,10.660602 10.06264,14.556712 5.87326,3.565317 12.69357,2.70395 15.51705,0.917355 2.75327,-1.742166 3.49702,-3.030504 3.98128,-5.079477 -1.2409,-0.06375 -2.83208,1.349067 -4.69036,4.324916 -2.71128,4.341835 -2.12506,8.558703 0.87287,9.613149 3.6535,1.285024 6.92691,-2.148855 8.20212,-6.52396 1.2752,-4.375106 -0.50352,-8.181802 -3.1222,-7.569024 -2.61868,0.612778 -0.11068,2.84729 1.70313,3.015094 2.65971,0.24606 9.46583,-0.688469 13.20795,-2.989255 -1.6133,4.241768 -7.44698,14.466136 -7.44698,14.466136 0,0 8.06208,-15.344131 12.81667,-14.479894 3.5594,0.646988 1.94629,5.341205 -0.11615,8.251594 -1.81329,2.558803 -3.05758,6.130699 0.43265,6.234312 3.49024,0.103614 7.21406,-7.672097 9.71047,-10.116682 1.82162,-1.783804 9.26283,-5.286622 11.74477,-3.706525 -3.95329,-1.360063 -10.3973,0.500471 -13.02318,5.652791 -2.15436,4.227155 0.83521,8.062794 3.63319,8.144567 5.36945,0.156926 10.35403,-13.818516 10.35403,-13.818516 0,0 -12.94302,30.554722 -18.45906,34.970015 -5.51603,4.415292 -9.49878,1.608101 -10.08044,-0.714314 -0.84192,-3.361592 1.63421,-7.306693 6.39619,-10.283633 4.76197,-2.97694 19.08421,-8.628647 24.86037,-13.949747" id="path2" sodipodi:nodetypes="cssszzszsscsszzsccsssscsscsszc" class="svg-elem-2"></path>
+                  <path style="fill: none; stroke: rgb(120, 157, 179); stroke-width: 2.003px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" d="m 15.714692,70.724789 c -1.257551,-0.05048 11.157877,-3.276651 24.602007,-31.072432 -3.849733,3.711627 -7.944483,9.599559 -7.57689,19.081956 0.367594,9.482398 -8.345785,15.77938 -14.925782,15.733157 C 11.23403,74.42125 8.3048199,72.854212 4.8615059,68.008887 18.606823,74.661685 47.450457,49.727191 57.688458,41.067405 53.576486,50.249578 43.592396,69.219259 40.188746,75.449127 44.960411,65.249666 50.390047,59.255014 53.555456,60.74026 c 3.165409,1.485245 2.029845,5.249472 0.230273,7.890035 -1.799572,2.640563 -2.364886,5.073738 -0.595807,6.75906 1.76908,1.685322 13.160083,-3.303084 18.343523,-7.795842 5.18344,-4.492758 0.86977,-6.575731 -2.39778,-4.651204 -3.26756,1.924526 -6.19527,9.520308 0.0925,12.232579 6.28781,2.71227 14.267524,-6.796105 18.448583,-13.047249 -2.808504,5.414426 -4.517168,9.517207 -6.661295,13.454422 6.877381,-12.630212 9.029731,-13.372514 11.203044,-13.397001 2.173313,-0.02449 3.506473,2.369672 0.538111,7.430032 -1.372131,2.339161 -1.529288,4.987294 -0.120976,5.671494 1.952499,0.948583 9.662828,-5.881131 9.662828,-5.881131" id="path1" sodipodi:nodetypes="cczzccczzzzzzcczssc" class="svg-elem-1"></path>
+                  <path style="fill: none; stroke: rgb(120, 157, 179); stroke-width: 2.003px; stroke-linecap: round; stroke-linejoin: round; stroke-opacity: 1;" d="m 133.8798,46.260151 c 0,0 -13.3365,27.087521 -19.30305,28.739111 -3.94547,1.09214 -5.6418,0.0156 -4.78302,-1.94875 1.30736,-2.99047 3.43691,-2.84227 5.39673,-2.53172 1.95982,0.31054 8.70784,5.07532 16.5177,4.83621 7.80985,-0.23911 10.81737,-10.37425 10.59667,-17.934874 -0.2207,-7.560622 -7.52982,-17.53136 -13.205,-15.016285 -3.66697,1.625095 -4.37929,5.597193 -4.44508,8.586427 -0.0658,2.989234 3.64445,10.660602 10.06264,14.556712 5.87326,3.565317 12.69357,2.70395 15.51705,0.917355 2.75327,-1.742166 3.49702,-3.030504 3.98128,-5.079477 -1.2409,-0.06375 -2.83208,1.349067 -4.69036,4.324916 -2.71128,4.341835 -2.12506,8.558703 0.87287,9.613149 3.6535,1.285024 6.92691,-2.148855 8.20212,-6.52396 1.2752,-4.375106 -0.50352,-8.181802 -3.1222,-7.569024 -2.61868,0.612778 -0.11068,2.84729 1.70313,3.015094 2.65971,0.24606 9.46583,-0.688469 13.20795,-2.989255 -1.6133,4.241768 -7.44698,14.466136 -7.44698,14.466136 0,0 8.06208,-15.344131 12.81667,-14.479894 3.5594,0.646988 1.94629,5.341205 -0.11615,8.251594 -1.81329,2.558803 -3.05758,6.130699 0.43265,6.234312 3.49024,0.103614 7.21406,-7.672097 9.71047,-10.116682 1.82162,-1.783804 9.26283,-5.286622 11.74477,-3.706525 -3.95329,-1.360063 -10.3973,0.500471 -13.02318,5.652791 -2.15436,4.227155 0.83521,8.062794 3.63319,8.144567 5.36945,0.156926 10.35403,-13.818516 10.35403,-13.818516 0,0 -12.94302,30.554722 -18.45906,34.970015 -5.51603,4.415292 -9.49878,1.608101 -10.08044,-0.714314 -0.84192,-3.361592 1.63421,-7.306693 6.39619,-10.283633 4.76197,-2.97694 19.08421,-8.628647 24.86037,-13.949747" id="path2" sodipodi:nodetypes="cssszzszsscsszzsccsssscsscsszc" class="svg-elem-2"></path>
                 </g>
               </svg>
             </a>
@@ -167,12 +203,18 @@
     </nav>
     <section id="about" class="container">
         <div class="container">
-            <h1>Shen Dong</h1>
+            <h1>Shēn Dǒng <small>(董珅)</small></h1>
             <div class="profile">
                 <div>
-                    <p>Welcome! I'm Shen Dong, a [Your profession here]. I specialize in [your specialization or interest]. With a passion for [related field or hobby], I strive to [personal mission or goal].</p>
+                    <p>I am a fourth-year undergraduate student of Computer Science at <a  class="myurls" href="https://acm.sjtu.edu.cn/home">ACM Class</a>, <a class="myurls" href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.</p>
+                    <p>I am interested in Cryptography. I am exploring the field of Cryptography, especially in the area of Post-Quantum Cryptography and Zero-Knowledge Proofs.</p>
+                    <ul>
+                        <li>Email: <a class="myurls" href="mailto:shen-dong@sjtu.edu.cn">shen-dong@sjtu.edu.cn</a></li>
+                        <li>GitHub: <a class="myurls" href="https://github.com/RabbitCabbage">RabbitCabbage</a></li>
+                        <li>My Resume at <a  class="myurls" href="">here</a></li>
+                    </ul>
                 </div>
-                <img src="assets/images/DS.jpg" alt="Profile Picture">
+                <img src="assets/images/DS2024.jpg" alt="Profile Picture">
             </div>
         </div>
     </section>
@@ -230,6 +272,8 @@
         const body = document.body;
         const header = document.querySelector('header');
         const sections = document.querySelectorAll('section');
+        const urls = document.querySelectorAll('.myurls');
+        const strokes = document.querySelectorAll('.svg-elem-1, .svg-elem-2');
         const darkModeClass = 'dark-mode';
         const navbar = document.getElementById('navbarid');
 
@@ -239,5 +283,7 @@
             sections.forEach(section => section.classList.toggle(darkModeClass));
             toggleButton.classList.toggle(darkModeClass);
             toggleButton.textContent = body.classList.contains(darkModeClass) ? 'Light Mode' : 'Dark Mode';
+            urls.forEach(url => url.classList.toggle(darkModeClass));
+            strokes.forEach(stroke => stroke.classList.toggle(darkModeClass));
         });
     </script>
