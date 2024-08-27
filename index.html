@@ -28,14 +28,14 @@
         color: #d1d1d1;
     }
     a.myurls {
-        color: rgb(0, 98, 155);
+        color: rgb(88, 151, 188);
     }
     a.myurls:hover {
         color: rgb(0, 115, 182);
     }
 
     a.myurls:visited {
-        color: rgb(0, 98, 155);
+        color: rgb(88, 151, 188);
     }
 
     a.myurls.dark-mode {
@@ -135,19 +135,6 @@
         stroke-dashoffset: 0;
       }
 
-      svg.svg-elem-1 {
-        stroke: rgb(0, 98, 155);
-      }
-      svg.svg-elem-2 {
-        stroke: rgb(0, 98, 155);
-      }
-
-      svg.svg-elem-1.dark-mode {
-        stroke: rgb(154, 185, 203);
-      }
-      svg.svg-elem-2.dark-mode {
-        stroke: rgb(154, 185, 203);
-      }
 
 </style>
 <body>
@@ -218,7 +205,7 @@
                     <ul>
                         <li>Email: <a class="myurls" href="mailto:shen-dong@sjtu.edu.cn">shen-dong@sjtu.edu.cn</a></li>
                         <li>GitHub: <a class="myurls" href="https://github.com/RabbitCabbage">RabbitCabbage</a></li>
-                        <li>My Resume at <a  class="myurls" href="">here</a></li>
+                        <li>My CV at <a  class="myurls" href="assets/files/ShenDong_CV_20240826upd.pdf">here</a></li>
                     </ul>
                 </div>
                 <img src="assets/images/DS2024.jpg" sizes="(max-width: 600px)480px,800px">
@@ -276,7 +263,6 @@
         const header = document.querySelector('header');
         const sections = document.querySelectorAll('section');
         const urls = document.querySelectorAll('.myurls');
-        const strokes = document.querySelectorAll('.svg-elem-1, .svg-elem-2');
         const darkModeClass = 'dark-mode';
         const navbar = document.getElementById('navbarid');
 
@@ -287,6 +273,5 @@
             toggleButton.classList.toggle(darkModeClass);
             toggleButton.textContent = body.classList.contains(darkModeClass) ? 'Light Mode' : 'Dark Mode';
             urls.forEach(url => url.classList.toggle(darkModeClass));
-            strokes.forEach(stroke => stroke.classList.toggle(darkModeClass));
         });
     </script>
