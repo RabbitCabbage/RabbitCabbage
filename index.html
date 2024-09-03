@@ -201,39 +201,48 @@
     <div class="main-container">
     <section id="about" class="mycontainer">
             <h1>Shēn Dǒng <small>(董珅)</small></h1>
-            <div class="profile">
                 <div>
                     <p>
-                        <img src="assets/images/DS2024.jpg" align="right">
+                        <img src="assets/images/DS2024.jpg" align="right" alt="Shen Dong" width="200" style = "margin-right: 20px; margin-bottom: 20px; border-radius: 5%; margin-top: 20px; margin-left: 20px;">
+                        
                         Hello! I am a fourth-year undergraduate student of Computer Science at <a  class="myurls" href="https://acm.sjtu.edu.cn/home">ACM Class</a>, <a class="myurls" href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>. I am currently a research assistant at <a class="myurls" href="https://csl.illinois.edu/">Coordinated Science Laboratory</a> of University of Illinois Urbana-Champaign, having the privilege to be advised by <a class="myurls" href="https://zhangyp.web.illinois.edu/">Prof. Yupeng Zhang</a>. I'm also part of <a class="myurls" href="https://crypto.sjtu.edu.cn/lab/">Cryptography & System Security Laboratory</a> at Shanghai Jiao Tong University, working with <a class="myurls" href="https://scholar.google.co.uk/citations?user=lpRkCB4AAAAJ&hl=en"> Prof. Yu Yu</a>'s group.<br>
                         
                         I have an extensive interest in Cryptography and I am exploring different fields of Cryptography, especially the area of Post-Quantum Cryptography and Zero-Knowledge Proofs (ZKP). Now I am working on ZKP and its applications, and formerly I have been exploring things on Learning Parity with Noise (LPN).  I am also an applicant for the 2025 Fall Ph.D. program in Computer Science.</p>
                     <ul>
-                        <li>GitHub: <a class="myurls" href="https://github.com/RabbitCabbage">RabbitCabbage</a></li>
                         <li>My CV at <a  class="myurls" href="assets/files/ShenDong_CV_20240826upd.pdf">here</a></li>
+                        <li>GitHub: <a class="myurls" href="https://github.com/RabbitCabbage">RabbitCabbage</a></li>
                         <li>Email: <a class="myurls" href="mailto:shen-dong@sjtu.edu.cn">shen-dong@sjtu.edu.cn</a></li>
                     </ul>
-                </div>
             </div>
+    </section>
+
+    <section id="preprints" class="mycontainer">
+        <h2>Preprints</h2>
+        <ul>
+            <li><strong>A Simple Post-Quantum Oblivious Transfer Protocol from Mod-LWR</strong> <a class="myurls" href="https://eprint.iacr.org/2024/1116>">ePrint</a> | <a class="myurls" href="https://github.com/RabbitCabbage/Saber-OT.git">Github</a><br>
+                <em>S. Dong, H. Cui, K. Zhang, K. Yang, Y. Yu</em><br>
+                Needing a post-quantum secure oblivious transfer protocol? Here is my try. This paper introduces a simple and efficient OT protocol based on the Mod-LWR problem. Our implementation even beats the state-of-the-art Endemic OT protocols with CRYSTAL-Kyber in terms of both time and size!
+            </li>
+        </ul>
     </section>
 
     <section id="projects" class="mycontainer">
             <h2>Projects</h2>
             <ul>
-                <li><strong>Project One:</strong> Description of the first project. Highlight key features and technologies used.</li>
-                <li><strong>Project Two:</strong> Description of the second project. Highlight key features and technologies used.</li>
-                <li><strong>Project Three:</strong> Description of the third project. Highlight key features and technologies used.</li>
+                <li><strong><a class="myurls" href="https://lpnestimator.com">LPN Estimator</a></strong>: 
+                    I helped to build this tool to estimate the bit security of LPN instances. Input the scale of your instantiations and the noise distribution, and it will give you an estimation of the bit security level based on some known attacks! We mainly considered Information Set Decoding (ISD) and its variant BJMM algorithm. Improvements are still ongoing in our lab!
+                </li>
+                <li><strong><a class="myurls" href="https://github.com/RabbitCabbage/Compiler-Design-Implementation.git">My Mx Compiler</a></strong>: 
+                    Given a piece of Java-like language (called Mx), my compiler can compile the code to assembly language. It is implemented in C++. I designed my own Abstract Syntax Tree (AST) and intermediate representation (IR), with some reference to LLVM IR.</li>
+                <li><strong><a class="myurls" href="https://github.com/RabbitCabbage/RISCV-CPU-2022.git">My Jigsaw Puzzle CPU</a></strong>:  
+                    My CPU written in Verilog can run a subset of RISC-V instructions. Implementing <a class="myurls" href="https://en.wikipedia.org/wiki/Tomasulo%27s_algorithm">Tomasulo Algorithm</a>, my CPU can execute instructions out of order, correctly handling data hazards and control hazards. I even burnt it into a FPGA board and ran successfully! Maybe I can even use it to run the assembly code generated by my compiler...</li>
+                </li>
+                <li><strong><a class="myurls" href="https://github.com/RabbitCabbage/Train-Ticket-System-2022.git">Train Ticket System</a></strong>: 
+                    A simulation of China Railway's ticket APP. You can search for appropriate trains, look up time tables, book tickets, and even refund them. Moreover, I co-worked with my classmates to provide a frontend webpage for this system.</li> 
+                </li>
             </ul>
     </section>
 
-    <section id="publications" class="mycontainer">
-            <h2>Publications</h2>
-            <ul>
-                <li><strong>Article One:</strong> Title of the first article. Published in [journal or platform] on [date].</li>
-                <li><strong>Article Two:</strong> Title of the second article. Published in [journal or platform] on [date].</li>
-                <li><strong>Article Three:</strong> Title of the third article. Published in [journal or platform] on [date].</li>
-            </ul>
-    </section>
     </div>
 </body>
 
