@@ -3,6 +3,7 @@ acid, acerbic, acerbity, acescent, acetic, acrid, acridity, acrimony, vinegar: s
 acuity, acute, accuracy, accurate, acicular, acupressure: small piercing point, sting.
 aculeate, acumen, acute, acuity: smart, sharp minds/words.
 exacerbate, exacerbation: to worsen.
+
 **oxy-**: to sharp, pungent, same origin with 'ak-'.
 oxygen, oxide.
 

@@ -4,3 +4,5 @@
 我们 ngo5dei6
 你们 nei5dei6
 他们 keoi5dei6
+
+![alt text](/assets/blogs/0901.jpg)
