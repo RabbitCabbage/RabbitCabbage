@@ -1,13 +1,15 @@
-# Lookup tables for zk
-## Introduction
+<script type="text/javascript" charset="utf-8" 
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
+https://vincenttam.github.io/javascripts/MathJaxLocal.js">
+</script>
 
+# Lasso Lookup
 What is a lookup argument? Briefly speaking, it's a cryptographic proof that a value (or some values) is in a table. Formally, a (non-interactive) lookup argument is a SNARK, for the prover to claim that it knows an opening of a commitment, and that the openning set is in a public table of field elements. The table can be provided to the verifier as a commitment for verification. 
 The line of works (Caulk, Caulk+, flookup, Baloo and cq) prefer the commitment of the table and lookups to be additively homomorphic. 
 
 They require a structured reference string of the table size as pre-processing ($O(N\log N)$ group exponentiations).
-## Plookup
 
-## Lasso
+## Technical Details
 Verifier has commitment to table $t\in \mathbb{F}^n$ and commitment to vector $a\in \mathbb{F}^m$. Prover want to prove that $a$ is in the table $t$. So the prover proves knowledge of a sparse matrix $M\in \mathbb{F}^{m\times n}$ such that 
 
 $$Mt=a$$
