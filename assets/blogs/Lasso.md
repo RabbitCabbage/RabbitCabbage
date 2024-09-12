@@ -78,7 +78,7 @@ More detailed steps of Lasso:
     
     $$\begin{aligned}
    t(x)&\stackrel{?}{=} g(T_1(x_1),T_2(x_2),\dots,T_c(x_c))\\
-    \{\text{index of $x$ in $T_i$}\}&\stackrel{?}{=} E_i(x_i)\quad \text{\underline{(TODO in step 3)}}
+    \{\text{index of $x$ in $T_i$}\}&\stackrel{?}{=} E_i(x_i)\quad \text{(TODO in step 3)}
     \end{aligned}$$
     
     where the verifier chooses random $x\in \mathbb F^{\log N^{1/c}}$ as challenges, and get $\widetilde{a}(x)$ by one evaluation to $\widetilde{a}$.
