@@ -25,7 +25,7 @@ for a random $r\in \mathbb{F}^{\log n}$ chosen by the verifier. Intuitively, if 
 ![from matrix-vector to multilinear extension](/assets/blogs/mt_a_extension.png)
 
 **Plain sumcheck**: sum up all hypercube $\{0,1\}^{\log n}$, but it's too expensive. 
-**Improvement intuition**: We only sum up over lookups, rather than all the table entries (the whoe hypercube).
+**Improvement intuition**: We only sum up over lookups, rather than all the table entries (the whole hypercube).
 **Technique**: represent the sparse polynomial with dense polynomials.
 
 > For example we have a $m$-sparse vector $D\in \mathbb F^N$ (thus a sparse polynomial), and we want to evaluate it at a random point $r\in \mathbb \{0,1\}^{\log N}$ (i.e. access the $r$-th element of $D$).

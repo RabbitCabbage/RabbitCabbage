@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "ca663ec0c4c3f8e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "6eedcde644b39c44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96d0e86057f204ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "assets/blogs/Lasso.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "43a86a208e534e09",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0e857b9ce45111cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "4697c4051bc1df85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0cdea8fb8d741c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fc97357dc0bda193",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3089f762f8866c39",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "b2cbf98c5776e448",
+    "type": "split",
+    "children": [
+      {
+        "id": "54be70640b7a3a13",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7267ede2199ff24c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0fb913aeec932c4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "962803fa1c4d60c3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e63fdf5e484b6ea1",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "43a86a208e534e09",
+  "lastOpenFiles": [
+    "assets/blogs/Lasso.md"
+  ]
+}
